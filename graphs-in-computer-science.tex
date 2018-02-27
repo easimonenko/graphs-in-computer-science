@@ -1,0 +1,67 @@
+% graphs-in-computer-science.tex
+% Graphs in Computer Science (in Russian)
+% Author: Evgeny Simonenko <easimonenko@mail.ru>
+% License: CC BY-ND 4.0
+
+\documentclass[12pt,a4paper]{book}
+
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+
+\usepackage{alltt}
+\usepackage{amsthm}
+\usepackage{floatflt}
+\usepackage[left=2cm, top=2cm, right=2cm, bottom=2cm]{geometry}
+\usepackage{hyperref}
+\usepackage{lastpage}
+\usepackage{listings}
+\usepackage{tikz}
+
+\frenchspacing
+\pagestyle{plain}
+\clubpenalty=2000
+\widowpenalty=2000
+
+\title{Графы в компьютерных науках}
+\author{Симоненко Е.А. \\ 
+\href{mailto:easimonenko@mail.ru}{easimonenko@mail.ru}}
+
+\makeindex
+
+\newtheorem{theorem}{Теорема}
+
+\begin{document}
+
+\maketitle
+
+%\linespread{1.25}
+\selectfont
+\setlength{\parskip}{0.5em}
+
+\include{summary}
+
+\tableofcontents
+
+\include{foreword}
+
+\include{basics}
+
+%\include{representations}
+
+\appendix
+
+\include{english-russian}
+\include{russian-english}
+\include{changelog}
+
+\include{bibliography}
+
+\listoffigures
+\listoftables
+
+%\begin{theindex}
+%\input{sample.ind}
+%\end{theindex}
+
+\end{document}
