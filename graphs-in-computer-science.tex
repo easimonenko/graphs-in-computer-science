@@ -5,9 +5,13 @@
 
 \documentclass[12pt,a4paper]{book}
 
-\usepackage[T1,T2A]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[english,russian]{babel}
+\usepackage{polyglossia}
+\setdefaultlanguage{russian}
+\setotherlanguage{english}
+\defaultfontfeatures{Ligatures={TeX},Renderer=Basic}
+\setmainfont{FreeSerif}
+\setsansfont{FreeSans}
+\setmonofont[SizeFeatures={Size=10}]{FreeMono}
 
 \usepackage{alltt}
 \usepackage{amsthm}
@@ -17,6 +21,7 @@
 \usepackage{lastpage}
 \usepackage{listings}
 \usepackage{tikz}
+\usepackage{multicol}
 
 \frenchspacing
 \pagestyle{plain}
@@ -30,6 +35,8 @@
 \makeindex
 
 \newtheorem{theorem}{Теорема}
+
+\newcommand{\entry}[2]{\textit{#1}\markboth{#1}{#1}\ {#2}}
 
 \begin{document}
 
